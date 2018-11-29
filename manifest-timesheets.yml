@@ -2,10 +2,10 @@ applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
-  - route: timesheets-pal-timesheets.apps.pikes.pal.pivotal.io
+  - route: timesheets-pal-ks.apps.pikes.pal.pivotal.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://tracker-timesheets-ks.apps.chicken.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-ks.apps.pikes.pal.pivotal.io
   services:
   - tracker-timesheets-database
