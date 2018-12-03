@@ -16,6 +16,7 @@ include "components:rest-support"
 include "components:test-support"
 
 include "platform-services:eureka-server"
+include "platform-services:oauth-server"
 
 include "databases:allocations-database"
 include "databases:backlog-database"
